@@ -8,7 +8,7 @@
 а так же последняя версия Gulp
 ***
 Чтобы развернуть проект необходимо:
-* $ git@github.com:SergioBateau/Umilabs.git
+* $ git clone git@github.com:SergioBateau/Umilabs.git
 * $ cd Umilabs
 * $ npm i
 ***
