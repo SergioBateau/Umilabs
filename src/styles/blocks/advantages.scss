@@ -1,0 +1,23 @@
+.advantages {
+  min-height: 655px;
+  width: 100%;
+  background-color: #f7f5fa;
+}
+
+.advantages__container {
+  padding-top: 120px;
+  padding-left: 135px;
+  padding-right: 165px;
+  padding-bottom: 160px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

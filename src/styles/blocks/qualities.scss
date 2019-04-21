@@ -1,0 +1,29 @@
+.qualities {
+  width: 100%;
+  min-height: 445px;
+  background-color: #F7F5FA;
+  position: relative;
+}
+
+.qualities-list {
+  position: absolute;
+  width: 970px;
+  min-height: 460px;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+
+}
+
+.qualities-list__item {
+  border: 1px solid #ededed;
+  padding: 50px 70px 60px 60px;
+}
+
+.qualities-list__text {
+  font-size: 24px;
+  letter-spacing: 3%;
+}

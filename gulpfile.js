@@ -43,7 +43,7 @@ task('copy:html', () => {
 });
 
 task('copy:img', () => {
-    return src('src/images/*').pipe(dest('dist/images')).pipe(reload({
+    return src('src/images/**/*').pipe(dest('dist/images')).pipe(reload({
         stream: true
     }));
 });
@@ -106,7 +106,7 @@ task('scripts', () => {
 })
 
 task('icons', () => {
-    return src('src/images/icons/*.svg')
+    return src('src/img/icons/*.svg')
         .pipe(svgo({
             plugins: [{
                 removeAttrs: {

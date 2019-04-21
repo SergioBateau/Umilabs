@@ -13,12 +13,6 @@ body {
   margin: 0;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -35,6 +29,11 @@ b {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Din Pro';
   margin: 0;
+  color: #222;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 p {
@@ -45,19 +44,45 @@ p {
   box-sizing: border-box;
 }
 
+span {
+  color: #F47821;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+}
+
 .wrapper {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  background-color: #e5e5e5;
+}
+
+.maincontent {
+  width: 1440px;
+  height: 4046px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .container {
-  max-width: rem(940px);
+  // max-width: 1420px;
   margin: 0 auto;
   width: 95%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

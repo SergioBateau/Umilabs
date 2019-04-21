@@ -1,0 +1,19 @@
+.hero {
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  font-family: 'Roboto', sans-serif;
+  color: #4a4556;
+  margin-top: 24px;
+}
+
+.hero-anketa {
+  opacity: 0.05;
+}

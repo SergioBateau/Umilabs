@@ -1,0 +1,19 @@
+.resume-btn {
+  width: 236px;
+  height: 54px;
+  border-radius: 111px;
+  background-color: #878787;
+  margin-top: 48px;
+  text-transform: uppercase;
+  color: #222;
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 16px;
+
+  &::before {
+    content: "+";
+    font-size: 40px;
+    color: #f47821;
+
+  }
+}

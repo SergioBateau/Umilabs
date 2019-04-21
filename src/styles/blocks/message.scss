@@ -1,0 +1,18 @@
+.message {
+  width: 100%;
+  min-height: 737px;
+}
+
+.message__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-left: 333px;
+  padding-right: 333px;
+  align-items: flex-start;
+}
+
+.message-text {
+  font-family: 'Roboto', sans-serif;
+  color: #4E4D53;
+  line-height: 26px;
+}
