@@ -1,0 +1,63 @@
+html {
+  font-size: 16px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Din Pro', sans-serif;
+  line-height: 1.42;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+  list-style: none;
+  }
+}
+
+b {
+  font-family: 'Din Pro'
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Din Pro';
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  max-width: rem(940px);
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
