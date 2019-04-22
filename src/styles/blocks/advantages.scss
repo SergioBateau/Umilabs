@@ -14,10 +14,21 @@
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 
 .advantages-list__item {
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin-right: 65px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.advantage-list__text {
+  font-family: 'Roboto', sans-serif;
+  color: #4e4d53;
 }

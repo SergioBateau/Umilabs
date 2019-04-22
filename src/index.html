@@ -125,9 +125,9 @@
 
       <section class="advantages">
         <div class="container advantages__container">
-          <h1 class="advantages-title">
+          <h2 class="advantages-title">
             Приемущества работы с нами
-          </h1>
+          </h2>
 
           <ul class="advantages-list">
 
@@ -136,14 +136,45 @@
                   <use xlink:href="./images/sprite.svg#wallet"></use>
               </svg>
 
-              <h4>
+              <h4 class="advantage-list__title">
                 Делимся опытом и навыками
               </h4>
 
-              <p>
+              <p class="advantage-list__text">
                 Мы обучаем коллег всему, что знаем сами.
                   Наш опыт уникален и проверен временем,
                   а команда постоянно совершенствует свои знания и навыки.
+              </p>
+            </li>
+
+            <li class="advantages-list__item">
+              <svg class="wallet-icon">
+                  <use xlink:href="./images/sprite.svg#wallet"></use>
+              </svg>
+
+              <h4 class="advantage-list__title">
+                Стабильная зарплата
+              </h4>
+
+              <p class="advantage-list__text">
+                Вы без задержек получаете официальную зарплату.
+                также мы оплачиваем больничные и даем возможность брать оплачиваемый
+                отпуск до 4 недель в год.
+              </p>
+            </li>
+
+            <li class="advantages-list__item">
+              <svg class="wallet-icon">
+                  <use xlink:href="./images/sprite.svg#wallet"></use>
+              </svg>
+
+              <h4 class="advantage-list__title">
+                Гибкий график
+              </h4>
+
+              <p class="advantage-list__text">
+                Мы умеем работать с теми, кто еще не закончил получать образоавниею
+                Вы можете работать неполный рабочий день, брать отгулы на время сессии и диплома.
               </p>
             </li>
 
@@ -151,8 +182,59 @@
         </div>
       </section>
 
+      <section class="form">
+        <form action="form">
+
+          <div class="container form__container">
+            <h2 class="form-title">
+              Теперь расскажите о себе
+            </h2>
+
+            <ul class="form-list">
+              <li class="form-list__item">
+                <label class="form-list__block" for="name">
+                  <div data-count="1" class="form-list__title">Фамилия и имя</div>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Кораблев Сергей" required>
+                  <div class="form-error"></div>
+                </label>
+              </li>
+
+              <li class="form-list__item">
+                <label class="form-list__block" for="email">
+                  <div data-count="2" class="form-list__title">Электронная почта</div>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="adamas34@gmail.com" required>
+                  <div class="form-error"></div>
+                </label>
+              </li>
+
+              <li class="form-list__item">
+                <label class="form-list__block" for="tel">
+                  <div data-count="3" class="form-list__title">Телефон</div>
+                  <input type="tel" id="tel" name="tel" class="form-input" placeholder="+7 (906)-268-78-92" required>
+                  <div class="form-error"></div>
+                </label>
+              </li>
+
+              <li class="form-list__item">
+                <label class="form-list__block" for="message">
+                  <div data-count="4" class="form-list__title">Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</div>
+                  <textarea type="text" id="message" name="message" class="form-input" placeholder="Свой проект по созданию универсальной инфраструктуры строительства" required></textarea>
+                  <div class="form-error"></div>
+                </label>
+              </li>
+
+            </ul>
+
+            <button type="submit" class="send-btn">Отправить</button>
+
+          </div>
+
+        </form>
+      </section>
+
     </div>
   </div>
+  
   <script src="main.min.js"></script>
 </body>
 </html>

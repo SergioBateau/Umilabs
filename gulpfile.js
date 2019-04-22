@@ -19,8 +19,8 @@ const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const svgo = require('gulp-svgo');
-const svgSprite = require('gulp-svg-sprite');
+// const svgo = require('gulp-svgo');
+// const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
 const MobileDetect = require('mobile-detect');
 
@@ -105,24 +105,24 @@ task('scripts', () => {
         }));
 })
 
-task('icons', () => {
-    return src('src/img/icons/*.svg')
-        .pipe(svgo({
-            plugins: [{
-                removeAttrs: {
-                    attrs: "(fill|stroke|style|width|height|data.*)"
-                }
-            }]
-        }))
-        .pipe(svgSprite({
-            mode: {
-                symbol: {
-                    sprite: "../sprite.svg"
-                }
-            }
-        }))
-        .pipe(dest('dist/images/icons'))
-})
+// task('icons', () => {
+//     return src('src/images/icons/*.svg')
+//         .pipe(svgo({
+//             plugins: [{
+//                 removeAttrs: {
+//                     attrs: "(fill|stroke|style|width|height|data.*)"
+//                 }
+//             }]
+//         }))
+//         .pipe(svgSprite({
+//             mode: {
+//                 symbol: {
+//                     sprite: "../sprite.svg"
+//                 }
+//             }
+//         }))
+//         .pipe(dest('dist/images/icons'))
+// })
 
 task('server', () => {
     browserSync.init({
@@ -136,14 +136,14 @@ task("watch", () => {
     watch('./src/styles/**/*.scss', series('styles'));
     watch('./src/*.html', series('copy:html'));
     watch('./src/scripts/*.js', series('scripts'));
-    watch('./src/images/*.svg', series('icons'));
+    // watch('./src/images/*.svg', series('icons'));
 })
 
 task('default',
     series("clean",
-        parallel("copy:html", "styles", 'copy:img','copy:fonts', "scripts", "icons"),
+        parallel("copy:html", "styles", 'copy:img','copy:fonts', "scripts"),
         parallel("watch", "server")));
 
 task('build',
     series("clean",
-        parallel("copy:html", "styles", 'copy:img','copy:fonts',"scripts", "icons")));
+        parallel("copy:html", "styles", 'copy:img','copy:fonts',"scripts")));
