@@ -33,12 +33,14 @@
 .form-error {
   position: absolute;
   top: 100%;
-  left: 10%;
+  left: 0;
+  width: 100%;
   background-color: #cd1515;
-  z-index: 100;
   color: #fff;
   padding: 10px 10px;
   border-radius: 10px;
+  position: relative;
+  text-align: center;
 
   &:empty {
     display: none;
@@ -64,6 +66,7 @@
   padding-bottom: 12px;
   @include border-opacity(#f7f8fa, 10);
   opacity: 0.3;
+  position: relative;
   
   &:focus {
     outline: none;
