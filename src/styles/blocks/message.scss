@@ -4,15 +4,36 @@
 }
 
 .message__container {
+  // min-width: 56%;
   padding-top: 80px;
-  padding-bottom: 100px;
-  padding-left: 333px;
-  padding-right: 333px;
+  // padding-bottom: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
   align-items: flex-start;
+
+  @include tablets () {
+    width: 60%;
+    padding-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @include phones () {
+    padding-bottom: 20px;
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .message-text {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #4E4D53;
-  // line-height: 26px;
+  line-height: 2;
+  word-wrap: break-word;
+  
+  @include tablets () {
+    line-height: 1.4;
+  }
 }

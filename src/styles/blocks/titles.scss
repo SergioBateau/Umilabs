@@ -1,6 +1,14 @@
 .message-title {
   text-align: left;
   margin-bottom: 24px;
+
+  @include tablets () {
+    margin-bottom: 20px;
+  }
+
+  @include phones () {
+    margin-bottom: 16px;
+  }
 }
 
 .hero-title {

@@ -16,14 +16,34 @@
   grid-template-columns: repeat(2, 1fr);
   background-color: #fff;
 
+  @include tablets () {
+    width: 580px;
+  }
+
+  @include phones () {
+    grid-template-columns: repeat(1, 1fr);
+    width: 350px;
+  }
 }
 
 .qualities-list__item {
   border: 1px solid #ededed;
   padding: 50px 70px 60px 60px;
+
+  @include tablets () {
+    padding: 50px 20px;
+  }
+
+  @include phones () {
+    padding: 10px 10px;
+  }
 }
 
 .qualities-list__text {
   font-size: 24px;
   letter-spacing: 3%;
+
+  @include tablets () {
+    font-size: 20px;
+  }
 }
