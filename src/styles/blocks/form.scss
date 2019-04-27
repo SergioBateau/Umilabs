@@ -11,6 +11,14 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 100px;
+
+  @include tablets () {
+    padding-top: 80px;
+  }
+
+  @include phones () {
+    padding-top: 60px;
+  }
 }
 
 .form-list {
@@ -20,6 +28,14 @@
   justify-content: center;
   margin-left: 60px;
   margin-bottom: 60px;
+
+  @include tablets () {
+    width: 20%;
+  }
+
+  @include phones () {
+    margin-left: 0;
+  }
 }
 
 .form-list__item {
@@ -27,6 +43,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include tablets () {
+    margin-bottom: 50px;
+  }
+
+  @include phones () {
+    margin-bottom: 20px;
   }
 }
 
@@ -96,5 +120,17 @@
     line-height: 3.1;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+
+    @include phones () {
+      content: "";
+      border: none;
+      display: none;
+    }
+  }
+}
+
+.form-input--textarea {
+  @include tablets () {
+    height: 100px;
   }
 }

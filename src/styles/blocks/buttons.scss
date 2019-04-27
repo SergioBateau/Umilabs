@@ -39,6 +39,14 @@
   text-transform: uppercase;
   color: #f47821;
   letter-spacing: 0.04em;
+
+  @include tablets () {
+    width: 450px;
+  }
+
+  @include phones () {
+    width: 300px;
+  }
 }
 
 .btn {

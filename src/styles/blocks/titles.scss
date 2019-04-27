@@ -11,9 +11,16 @@
   }
 }
 
-.hero-title {
+.hero-title,
+.advantages-title {
   @include tablets () {
     line-height: 1;
+  }
+}
+
+.advantages-title {
+  @include phones () {
+    width: 20%;
   }
 }
 
@@ -43,6 +50,15 @@
 .form-title {
   color: #fff;
   margin-bottom: 92px;
+
+  @include tablets () {
+    margin-bottom: 60px;
+  }
+
+  @include phones () {
+    text-align: center;
+    width: 20%;
+  }
 }
 
 

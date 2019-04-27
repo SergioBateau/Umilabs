@@ -91,6 +91,10 @@ input {
   &::placeholder {
     color: #fff;
   }
+
+  @include tablets () {
+    font-size: 20px;
+  }
 }
 
 textarea {
@@ -101,9 +105,15 @@ textarea {
   border: none;
   font-size: 24px;
   color: #fff;
+  
   font-family: 'Roboto', sans-serif;
+
   &::placeholder {
     color: #fff;
+  }
+
+  @include tablets () {
+    font-size: 20px;
   }
 }
 

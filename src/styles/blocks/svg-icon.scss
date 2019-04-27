@@ -3,4 +3,8 @@
   height: 52px;
   fill: #f478f4;
   margin-bottom: 30px;
+
+  @include tablets () {
+    margin-bottom: 20px;
+  }
 }
