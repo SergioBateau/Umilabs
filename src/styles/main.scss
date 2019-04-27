@@ -13,6 +13,21 @@
 	background-clip: padding-box;
 };
 
+@mixin tablets () {
+  @media screen and (max-width: $tablets) {
+      @content;
+  }
+};
+
+@mixin phones () {
+  @media screen and (max-width: $phones) {
+      @content;
+  }
+};
+
+$tablets: 768px;
+$phones: 480px;
+
 @import "./layout/*.scss";
 
 @import "./blocks/*.scss";

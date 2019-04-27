@@ -13,7 +13,7 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
-const px2rem = require('gulp-smile-px2rem');
+// const px2rem = require('gulp-smile-px2rem');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
@@ -22,7 +22,7 @@ const uglify = require('gulp-uglify');
 // const svgo = require('gulp-svgo');
 // const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
-const MobileDetect = require('mobile-detect');
+// const MobileDetect = require('mobile-detect');
 
 
 const env = process.env.NODE_ENV;

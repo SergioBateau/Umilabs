@@ -9,9 +9,29 @@
 }
 
 .hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include tablets () {
+    width: 85%;
+    padding: 0 5%;
+  }
+  @include phones () {
+    width: 60%;
+    padding: 0 10%;
+  }
+}
+
+.hero-text {
   font-family: 'Roboto', sans-serif;
   color: #4a4556;
   margin-top: 24px;
+  word-wrap: break-word;
+
 }
 
 .hero-resume {

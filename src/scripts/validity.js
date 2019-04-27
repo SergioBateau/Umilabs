@@ -1,32 +1,29 @@
 const myForm = document.querySelector('#form');
-console.log(myForm);
 
 const sendButton = document.querySelector('.send-btn');
+
 const modalText = document.querySelector('.popup-form__text');
-console.log(modalText);
 
 const popupForm = document.querySelector('.popup-form');
-console.log(popupForm);
 
 const closePopupForm = document.querySelector('.popup-form__close');
-console.log(closePopupForm);
 
 const overlayForm = document.querySelector('.overlay-form');
-console.log(overlayForm);
-
 
 sendButton.addEventListener('click', function (event) {
   event.preventDefault();
   if (validateForm(myForm)) {
       let name = myForm.elements.name.value;
+
       let email = myForm.elements.email.value;
+
       let tel = myForm.elements.tel.value;
-      // let mail = 'mail@mail.ru';
+
       let formData = new FormData();
+
       formData.append('name', name);
       formData.append('email', email);
       formData.append('tel', tel);
-      // formData.append('to', mail);
 
       let url = 'https://webdev-api.loftschool.com/sendmail';
 

@@ -1,5 +1,12 @@
 html {
   font-size: 16px;
+
+  @include tablets() {
+    font-size: 14px;
+  }
+  @include phones() {
+      font-size: 13px;
+  }
 }
 
 html, body {
@@ -34,10 +41,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 48px;
+
+  @include tablets () {
+    font-size: 36px;
+  }
 }
 
 h2 {
   font-size: 40px;
+
+  @include tablets () {
+    font-size: 30px;
+  }
 }
 
 p {
@@ -106,7 +121,7 @@ textarea {
 
 .maincontent {
   width: 1440px;
-  height: 4046px;
+  min-height: 4046px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -115,9 +130,7 @@ textarea {
 }
 
 .container {
-  // max-width: 1420px;
   margin: 0 auto;
-  // width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
