@@ -68,7 +68,13 @@ task('styles', () => {
         // .pipe(px2rem())
         .pipe(gulpif(env === "dev",
             autoprefixer({
-                browsers: ['last 2 versions'],
+                browsers: ['last 2 versions',
+                 'safari 5',
+                 'not ie 10',
+                 'opera 12.1',
+                 'ios 6',
+                 'android 4'],
+                flexbox: true,
                 cascade: false
             })))
         .pipe(gulpif(env === "prod", gcmq()))
